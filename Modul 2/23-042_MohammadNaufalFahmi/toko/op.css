@@ -1,0 +1,211 @@
+:root{
+    --primer: #c89839;
+    --bg: #010101;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color:white;
+    /* min-height: 2000px; */
+}
+/*navbar*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: #79663f;
+    border-bottom: 1px solid var(--primer);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;/*agar navbar tetap diatas*/
+}
+.navbar .navbar-logo{
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+    font-style: italic;
+
+}
+.navbar .navbar-logo span{
+    color: var(--primer); 
+}
+.navbar .navbar-nav a{
+    color: white;
+    display: inline-block;
+    font-size: 1,6rem;
+    margin: 0 1rem;
+}
+.navbar .navbar-nav a:hover{
+    color: var(--primer)
+}
+/* Landing section */
+.landing{
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   background-image: url(tempat.jpg); 
+   background-repeat: no-repeat;
+   background-size: cover; 
+   background-position:center ;
+   position: relative;
+}
+.landing::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    background: linear-gradient(0deg,
+    rgb(3, 3, 1)2%,rgba(255, 255, 255, 0)50%);
+}
+.landing .content{
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+}
+.landing .content h1{
+    font-size: 5em;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    line-height: 1.1;
+}
+.landing .content h1 span{
+    color: var(--primer);
+}
+.landing .content p{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    line-height: 1.4;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+/* About section */
+.about, .menu{
+   padding: 7rem 7% 1.4rem; 
+}
+.about h2, .menu h2{
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+}
+.about h2 span, .menu h2 span{
+    color: var(--primer);
+}
+.about .row{
+    display: flex;
+}
+.about .row .about-img{
+    flex: 1 1 30rem;
+}
+.about .row .about-img img{
+    width: 90%;
+}
+.about .row .content{
+    flex: 1 1 45rem;
+    padding: 0 0.5rem;
+}
+.about .row .content h3{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+.about .row .content h3 span{
+    color: var(--primer);
+}
+.about .row .content p{
+    margin-bottom: 0.8rem;
+    font-size: 0.8rem;
+    font-weight: 100;
+    line-height: 1.6;
+}
+/* Menu section */
+.menu h2{
+    margin-bottom: 1rem;
+}
+.menu p{
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+    font-weight: 100;
+    line-height: 1.6;
+}
+.menu .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: center;
+}
+.menu .row .menu-kartu{
+    text-align: center;
+    flex: 1 0 25%;
+    margin: 0 1rem;
+    max-width: 200px;
+    padding-bottom: 3rem;
+}
+.menu .row .menu-kartu img{
+    border-radius: 50%;
+    width: 60%;
+}
+.menu .row .menu-kartu .menu-kartu-nama{
+    margin: 1rem auto 0.5rem;
+}
+/* Form section */
+.pesan h2 {
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.pesan h2 span{
+    color: var(--primer);
+}
+.order-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--primer);
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #c89839; /* ganti warna ketika  hover */
+}

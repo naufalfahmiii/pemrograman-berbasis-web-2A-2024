@@ -1,0 +1,52 @@
+
+#jumbotron{
+    padding-top: 6rem;
+    background-color:bisque;
+}
+#lessons{
+    background-color: bisque;
+}
+section{
+    padding-top: 5rem;
+}
+.register-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: antiquewhite;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color:bisque;
+    color: black;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #c89839; /* ganti warna ketika  hover */
+}
